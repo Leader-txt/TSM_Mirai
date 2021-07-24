@@ -1,0 +1,154 @@
+2021/7/23 18:21:03
+Message: [3251263056] hello
+System.Exception: Module Run Error: Hello
+ ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at TSM_Mirai.Main.Hi(MessageSource src) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 18
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at CocoaFramework.Core.Route.TextRouteInfo.Run(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
+2021/7/23 19:54:32
+Message: [3251263056] a
+System.Exception: Module Run Error: Test
+ ---> System.AggregateException: One or more errors occurred. (Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.)
+ ---> System.IO.FileNotFoundException: Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.
+File name: 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at CocoaFramework.Support.BotAPI.UploadImageAsync(UploadTarget target, String path)
+   at CocoaFramework.Model.QUser.SendImageAsync(String path)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CocoaFramework.Model.QUser.SendImage(String path)
+   at TSM_Mirai.Test.OnMessage(MessageSource src, QMessage msg) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 21
+   at CocoaFramework.Core.BotModuleBase.OnMessageSafe(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
+2021/7/23 19:55:30
+Message: [3251263056] a
+System.Exception: Module Run Error: Test
+ ---> System.AggregateException: One or more errors occurred. (Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.)
+ ---> System.IO.FileNotFoundException: Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.
+File name: 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at CocoaFramework.Support.BotAPI.UploadImageAsync(UploadTarget target, String path)
+   at CocoaFramework.Model.QUser.SendImageAsync(String path)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CocoaFramework.Model.QUser.SendImage(String path)
+   at TSM_Mirai.Test.OnMessage(MessageSource src, QMessage msg) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 24
+   at CocoaFramework.Core.BotModuleBase.OnMessageSafe(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
+2021/7/23 19:55:33
+Message: [3251263056] a
+System.Exception: Module Run Error: Test
+ ---> System.AggregateException: One or more errors occurred. (Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.)
+ ---> System.IO.FileNotFoundException: Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.
+File name: 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at CocoaFramework.Support.BotAPI.UploadImageAsync(UploadTarget target, String path)
+   at CocoaFramework.Model.QUser.SendImageAsync(String path)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CocoaFramework.Model.QUser.SendImage(String path)
+   at TSM_Mirai.Test.OnMessage(MessageSource src, QMessage msg) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 24
+   at CocoaFramework.Core.BotModuleBase.OnMessageSafe(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
+2021/7/23 19:56:09
+Message: [3251263056] a
+System.Exception: Module Run Error: Test
+ ---> System.AggregateException: One or more errors occurred. (Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.)
+ ---> System.IO.FileNotFoundException: Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.
+File name: 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at CocoaFramework.Support.BotAPI.UploadImageAsync(UploadTarget target, String path)
+   at CocoaFramework.Model.QUser.SendImageAsync(String path)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CocoaFramework.Model.QUser.SendImage(String path)
+   at TSM_Mirai.Test.OnMessage(MessageSource src, QMessage msg) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 24
+   at CocoaFramework.Core.BotModuleBase.OnMessageSafe(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
+2021/7/23 19:56:58
+Message: [3251263056] test
+System.Exception: Module Run Error: Test
+ ---> System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.AggregateException: One or more errors occurred. (Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.)
+ ---> System.IO.FileNotFoundException: Could not find file 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'.
+File name: 'F:\Code\TSM_Mirai\TSM_Mirai\bin\Debug\net5.0\以下是启用的群聊'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at CocoaFramework.Support.BotAPI.UploadImageAsync(UploadTarget target, String path)
+   at CocoaFramework.Model.QUser.SendImageAsync(String path)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CocoaFramework.Model.QUser.SendImage(String path)
+   at TSM_Mirai.Test.Main(MessageSource src) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 18
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at CocoaFramework.Core.Route.TextRouteInfo.Run(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
+2021/7/23 20:48:40
+Message: [3251263056] 
+System.Exception: Module Run Error: Main
+ ---> System.AggregateException: One or more errors occurred. (消息链中的所有消息均为空。)
+ ---> System.ArgumentException: 消息链中的所有消息均为空。
+   at Mirai_CSharp.MiraiHttpSession.CommonSendMessageAsync(String action, Nullable`1 qqNumber, Nullable`1 groupNumber, IMessageBase[] chain, Nullable`1 quoteMsgId)
+   at CocoaFramework.Support.BotAPI.CommonSendMessage(Int64 id, Boolean isGroup, IMessageBase[] chain, Nullable`1 quote)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at CocoaFramework.Model.MessageSource.Send(String message)
+   at TSM_Mirai.Main.OnMessage(MessageSource src, QMessage msg) in F:\Code\TSM_Mirai\TSM_Mirai\Main.cs:line 19
+   at CocoaFramework.Core.BotModuleBase.OnMessageSafe(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   --- End of inner exception stack trace ---
+   at CocoaFramework.Core.ModuleCore.OnMessage(MessageSource src, QMessage msg)
+   at CocoaFramework.Core.BotCore.OnMessage(MessageSource src, QMessage msg)
+
